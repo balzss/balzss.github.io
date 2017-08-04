@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style>
+html, body {
+}
+body {
+    background-color: #f7f7f7;
+    color: #201c1d;
+    margin: 0 48px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+.name {
+    font-size: 4rem;
+    margin: 12px 0 0 -4px;
+}
+
+.role {
+    margin: 0;
+    margin-bottom: 12px;
+}
+.headline {
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.sidebar {
+    background-color: #201c1d;
+    color: #f7f7f7;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 84px;
+}
+
+.about {
+    border-bottom: 1px solid #f7f7f7;
+}
+.main-page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 48px;
+}
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+}
+
+.block {
+    width: 35%;
+    height: 48px;
+    background-color: #201c1d;
+}
+
+.about, .contact {
+    padding: 24px;
+}
+
+.workplace, .education {
+    display: flex;
+}
+
+.date {
+    width: 100%;
+}
+
+.main-page h2 {
+    font-size: 2rem;
+}
+
+.main-page > div {
+    border-bottom: 1px solid #201c1d;
+    padding-bottom: 24px;
+}
+
+a {
+    color: inherit;
+    opacity: 0.8;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="outer-container">
+        <div class="block"></div>
+            <div class="headline">
+                <h1 class="name">Balázs Sáros</h1>
+                <h3 class="role">Software developer, UI/UX designer</h3>
+            </div>
+        <div class="container">
+            <div class="sidebar">
+                <div class="photo">
+                    <img src="http://via.placeholder.com/500x500">
+                </div>
+                <div class="about">
+                    <h2>About me</h2>
+                    <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+                <div class="contact">
+                    <h2>Contact me</h2>
+                    <h3>Phone:</h3>
+                    <div>+36202347520</div>
+                    <h3>Email:</h3>
+                    <div><a href="mailto: balazs.saros@gmail.com">balazs.saros@gmail.com</a></div>
+                    <h3>GitHub:</h3>
+                    <div><a href="https://github.com/balzss">balzss</a></div>
+                </div>
+            </div>
+            <div class="main-page">
+                    <h2>Work experience</h2>
+                    <div class="workplace">
+                        <h3 class="date">Aug 2016 - Present</h3>
+                        <div class="work-description">
+                            <h3>Mortoff</h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <h2>Education</h2>
+                <div class="education">
+                        <h3 class="date">Sept 2016 - Present</h3>
+                        <div class="work-description">
+                            <h3>budapest university of technology and economics</h3>
+                            <p>Software Engineering</p>
+                        </div>
+                </div>
+                    <h2>Skills</h2>
+                <div class="skills">
+                        <h3 class="date">Aug 2016 - Present</h3>
+                        <div class="work-description">
+                            <h3>Mortoff</h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
