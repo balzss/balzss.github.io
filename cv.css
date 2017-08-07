@@ -11,11 +11,13 @@ body {
     margin: 0 48px;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 1px;
+    line-height: 20px;
 }
 
 h1, h2, h3 {
     text-transform: uppercase;
     font-weight: 400;
+    line-height: normal;
 }
 
 .name {
@@ -34,8 +36,9 @@ h1, h2, h3 {
 
 .sidebar {
     background-color: #201c1d;
+    /* background-color: #302c2d; */
     color: #f7f7f7;
-    width: 35%;
+    width: 33vw;
     display: flex;
     flex-direction: column;
     padding-bottom: 84px;
@@ -43,6 +46,7 @@ h1, h2, h3 {
 
 .about {
     border-bottom: 1px solid #f7f7f7;
+    line-height: 24px;
 }
 .main-page {
     flex: 1;
@@ -62,6 +66,10 @@ h1, h2, h3 {
     flex-direction: column;
 }
 
+.photo {
+    /* height: 33vw; */
+}
+
 .photo img {
     width: 100%;
     height: auto;
@@ -69,7 +77,7 @@ h1, h2, h3 {
 
 .block {
     width: 35%;
-    height: 96px;
+    height: 68px;
     background-color: #201c1d;
 }
 
@@ -79,6 +87,8 @@ h1, h2, h3 {
 
 .place {
     display: flex;
+    border-bottom: 1px solid #201c1d;
+    padding-bottom: 32px;
 }
 
 .date {
@@ -91,8 +101,6 @@ h1, h2, h3 {
 }
 
 .main-page > div {
-    border-bottom: 1px solid #201c1d;
-    padding-bottom: 24px;
 }
 
 a {
@@ -105,4 +113,42 @@ a {
 
 .place-description h3 {
     margin: 0;
+}
+
+.skills {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.skill {
+    flex-basis: 45%;
+    margin: 8px 0;
+    font-weight: 700;
+}
+.progressbar {
+    height: 12px;
+    border: 1px solid #ccc;
+}
+
+.p78 {
+    width: 78%;
+}
+.p83 {
+    width: 83%;
+}
+.p66 {
+    width: 66%;
+}
+.p52 {
+    width: 52%;
+}
+.pbar{
+    height: 100%;
+    background-color: #ccc;
+}
+
+.skill-categ {
+    margin-bottom: 0;
 }
