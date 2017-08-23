@@ -2,105 +2,196 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Balázs Sáros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Balazs Saros</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./favicon.png" />
     <style>
 body {
-    background-color: #efeeed;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #d0d0d0;
 }
-h1 {
-    text-align: center;
-    opacity: 0.9;
-}
-h1, h2, h3, h4 {
-    font-weight: 400;
-}
+
 a {
     color: inherit;
-    opacity: 0.8;
 }
-p, li {
-    line-height: 1.9;
-    opacity: 0.8;
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 16px;
 }
+
+h3 {
+    text-align: center;
+    opacity: 0.7;
+    font-weight: 400;
+    margin: 8px 0;
+}
+
 .container {
-    max-width: 700px;
-    margin: 0 auto;
+    display: flex;
+    margin: 24px auto;
+    max-width: 900px;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.marker {
-    color: red;
-    font-size: 1.6rem;
+
+.card {
+    display: flex;
+    border-radius: 3px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background-color: #f7f7f7;
+    margin-top: 32px;
+    height: auto;
+}
+
+.card img {
+    width: 45%;
+    height: 100%;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+.card .content {
+    width: 55%;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+    box-sizing: border-box;
+    padding: 16px 24px;
+    width: 100%;
+    background-color: #f7f7f7;
+    color: #201c1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .content .subtitle {
+    font-size: 20px;
+    opacity: 0.6;
+}
+
+.card .content .title {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.card .content .links .link {
+    padding: 2px 0;
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+        border-top-right-radius: inherit;
+        border-bottom-left-radius: 0;
+    }
+    .card .content {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: inherit;
+        width: 100%;
+    }
+    .card .content .links{
+        padding-top: 12px;
+    }
 }
     </style>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <link rel="icon" href="./favicon.png">
 </head>
-<!-- <body> -->
-<!--     <div class="container"> -->
-<!--         <h1>Hi, my name is Balázs Sáros and your are probably looking for reasons to hire me</h1> -->
-<!--         <p>You can find my CV in PDF form <a href="#">here</a> if you prefer formality.<br> -->
-<!--         If you are in a hurry I suffixed the most important infos with a <b class="marker">!</b> <br> -->
-<!--         So here are some basic info...</p> -->
-<!--         <h2>...about myself:</h2> -->
-<!--         <ul> -->
-<!--             <li>I live in Budapest, Hungary</li> -->
-<!--             <li>I'm 21 years old</li> -->
-<!--             <li>I'm currently studying <b>Computer Engineering</b> at the Budapest University of Technology and Economics</li> -->
-<!--             <li>My GitHub profile: <a href="#">balzss</a> <b class="marker">!</b></li> -->
-<!--             <li>My email adress: <a href="mailto: balazs.saros@gmail.com">balazs.saros@gmail.com</a></li> -->
-<!--         </ul> -->
-<!--         <h2>...about my work experience:</h2> -->
-<!--         <ul> -->
-<!--             <li><h4>Since the summer of 2016, I'm working at <a href="#">Mortoff</a> where<b class="marker"> !</b></h4></li> -->
-<!--             <ul> -->
-<!--                 <li>Started as an <b>Android/Java developer</b> but later joined the Product Team</li> -->
-<!--                 <li>Besides Android and Java, I worked on <b>client and server side JavaScript</b> with frameworks like Angular1 and React (for frontend) and Express.js (for backend)</li> -->
-<!--                 <li>Got involved in multiple <b>Industry 4.0 IoT projects</b> involving Arduino, RaspberryPi, MQTT and Socket.io</li> -->
-<!--                 <li>Integrated biometric identification through SDKs into cutom Android and Desktop (Java) apps</li> -->
-<!--             </ul> -->
-<!--         </ul> -->
-<!--         <h2>...about my sideprojects:</h2> -->
-<!--         <ul> -->
-<!--             <li><h4><a href="#">luxbar</a> <b class="marker">!</b></h4></li> -->
-<!--             <ul> -->
-<!--                 <li>A lightweight and cutomizable CSS library for creating navigation bars that look good both on desktop and mobile</li> -->
-<!--                 <li>With a UX optimized demo page which I created with <b>React and Redux</b></li> -->
-<!--                 <li>It has over 450 stars on GitHub</li> -->
-<!--             </ul> -->
-<!--             <li><h4><a href="#">touchPL</a></h4></li> -->
-<!--             <ul> -->
-<!--                 <li>First part of an experimental project to create a touch focused programming language with a visual syntax and IDE</li> -->
-<!--                 <li>It disassembles JavaScript into an Abstract Syntax Tree and builds the visual syntax from it</li> -->
-<!--                 <li>It is powered by <b>vue.js</b> and works fully on client side</li> -->
-<!--             </ul> -->
-<!--             <li><h4><a href="#">redet-playground</a> <b class="marker">!</b></h4></li> -->
-<!--             <ul> -->
-<!--                 <li>First part of an experimental project to create a touch focused programming language with a visual syntax and IDE</li> -->
-<!--                 <li>It disassembles JavaScript into an Abstract Syntax Tree and builds the visual syntax from it</li> -->
-<!--                 <li>It is powered by vue.js and works fully on client side</li> -->
-<!--             </ul> -->
-<!--             <li><h4><a href="#">lx-devices</a></h4></li> -->
-<!--             <ul> -->
-<!--                 <li>A lightweight JavaScript library to make IOS, Android and OSX mockup frames with one line of HTML</li> -->
-<!--             </ul> -->
-<!--             <li><h4><a href="#">more-info</a></h4></li> -->
-<!--             <ul> -->
-<!--                 <li>A Chrome extension that expand your Google search results with visual clues and additional information</li> -->
-<!--                 <li>Addition info includes (where available) Github repo info: stargazer count and last time updated; Reddit thread info: number of upvotes, number of comments; Stackoverflow: is answered?, number of upvotes</li> -->
-<!--             </ul> -->
-<!--             <li><h4><a href="#">I also wrote some programming related articles at Medium</a> <b class="marker">!</b></h4></li> -->
-<!--         </ul> -->
-<!--         <h2>...about my workflow preferences:</h2> -->
-<!--         <ul> -->
-<!--             <li>Opensource over proprietary</li> -->
-<!--             <li>UNIX over Windows</li> -->
-<!--             <li>Git over SVN</li> -->
-<!--             <li>CLI over GUI</li> -->
-<!--             <li>VPS over shared hosting</li> -->
-<!--             <li>Automated testing over manual testing</li> -->
-<!--             <li>Vim over other text editors</li> -->
-<!--         </ul> -->
-<!--     </div> -->
+<body>
+    <h1>Personal portfolio of Balázs Sáros</h1>
+    <h3>Here are most of the things I worked on in my freetime in the last couple years. These are all sideprojects.</h3>
+    <h3><a href="https://balzss.github.io/cv.pdf">My resume</a> • <a href="https://github.com/balzss">Github account</a> • <a href="mailto:balazs.saros@gmail.com">Email</a></h3>
+    <div class="container">
+        <div class="card">
+            <img src="https://camo.githubusercontent.com/c13974ae51d5b4db565b1dc982acbb1610be4f79/687474703a2f2f692e696d6775722e636f6d2f3065477a734e742e676966" alt="">
+            <div class="content">
+                <div class="titles">
+                    <div class="title">Luxbar</div>
+                    <div class="subtitle">Featherweight, Responsive, CSS Only Navigation Bar</div>
+                </div>
+                <div class="links">
+                    <div class="link"><b>Github:</b> <a href="https://github.com/balzss/luxbar">https://github.com/balzss/luxbar</a></div>
+                    <div class="link"><b>Website:</b> <a href="https://balzss.github.io/luxbar">https://balzss.github.io/luxbar</a></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://camo.githubusercontent.com/54301fb62bf263af370817a712263fdd5bf35ca3/687474703a2f2f692e696d6775722e636f6d2f5741626b424f792e676966" alt="">
+            <div class="content">
+                <div class="titles">
+                    <div class="title">touchPL</div>
+                    <div class="subtitle">Visual syntax optimized for displaying source code on handheld devices</div>
+                </div>
+                <div class="links">
+                    <div class="link"><b>Github:</b> <a href="https://github.com/balzss/touchPL">https://github.com/balzss/touchPL</a></div>
+                    <div class="link"><b>Website:</b> <a href="https://balzss.github.io/touchPL">https://balzss.github.io/touchPL</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.imgur.com/P4oOY0w.png" alt="">
+            <div class="content">
+                <div class="titles">
+                    <div class="title">lx-devices</div>
+                    <div class="subtitle">Customizable and easy to use IOS, Android and OSX device frames in one line of HTML</div>
+                </div>
+                <div class="links">
+                    <div class="link"><b>Github:</b> <a href="https://github.com/balzss/touchPL">https://github.com/balzss/touchPL</a></div>
+                    <div class="link"><b>Website:</b> <a href="https://balzss.github.io/touchPL">https://balzss.github.io/touchPL</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://camo.githubusercontent.com/39a9840e55c69024ae135d7fdc6849c8dfd26e39/687474703a2f2f692e696d6775722e636f6d2f73353673734d782e676966" alt="">
+            <div class="content">
+                <div class="titles">
+                    <div class="title">yip</div>
+                    <div class="subtitle">Frontend for searching PyPI, a feature rich alternative to pip search</div>
+                </div>
+                <div class="links">
+                    <div class="link"><b>Github:</b> <a href="https://github.com/balzss/yip">https://github.com/balzss/yip</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="http://idgnow.com.br/idgimages/medium%20logo.jpg" alt="">
+            <div class="content">
+                <div class="titles">
+                    <div class="title">Published articles on medium.com</div>
+                    <div class="subtitle">I wrote a few programming related articles and published them on medium.com</div>
+                </div>
+                <div class="links">
+                    <div class="link"><b>Link:</b> <a href="https://medium.com/@balazs.saros">https://medium.com/@balazs.saros</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="http://i.imgur.com/UC7TC5Q.gif" alt="">
+            <div class="content">
+                <div class="titles">
+                    <div class="title">Visualized OEE calculator</div>
+                    <div class="subtitle">A tool to help anyone understand the concept and implications of OEE (instructions are in the reddit thread)</div>
+                </div>
+                <div class="links">
+                    <div class="link"><b>Reddit thread:</b> <a href="https://www.reddit.com/r/engineering/comments/6v39no/i_made_a_visualized_oee_calculator_but_my_boss/dlxb4vw/">https://www.reddit.com/r/engineering/co...</a></div>
+                    <div class="link"><b>Link:</b> <a href="https://balzss.github.io/oee-calc/">https://balzss.github.io/oee-calc/</a></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
-
