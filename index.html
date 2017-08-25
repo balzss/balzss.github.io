@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Balazs Saros</title>
+    <title>Portfolio - Balázs Sáros</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="icon" type="image/png" href="./favicon.png" />
     <style>
@@ -26,7 +26,8 @@ h3 {
     text-align: center;
     opacity: 0.7;
     font-weight: 400;
-    margin: 18px 0;
+    margin: 0;
+    margin-top: 24px;
 }
 
 .container {
@@ -41,7 +42,7 @@ h3 {
 .card {
     display: flex;
     border-radius: 3px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     background-color: #f7f7f7;
     margin-top: 32px;
     height: auto;
@@ -69,7 +70,7 @@ h3 {
 }
 
 .card .content .subtitle {
-    font-size: 20px;
+    font-size: 18px;
     opacity: 0.6;
 }
 
@@ -112,7 +113,7 @@ h3 {
 <body>
     <h1>Personal portfolio of Balázs Sáros</h1>
     <h3>Here are most of the things I worked on in my freetime in the last couple years. These are all sideprojects.</h3>
-    <h3><a href="https://balzss.github.io/cv.pdf">My resume</a> • <a href="https://github.com/balzss">Github account</a> • <a href="mailto:balazs.saros@gmail.com">Email</a></h3>
+    <h3><a href="https://balzss.github.io/balazs_saros_cv.pdf">My resumé</a> • <a href="https://github.com/balzss">Github account</a> • <a href="mailto:balazs.saros@gmail.com">Email</a></h3>
     <div class="container">
         <div class="card">
             <video autoplay muted loop> <source src="./static/luxbar.mp4" type="video/mp4" /> </video>
@@ -129,6 +130,19 @@ h3 {
         </div>
         
         <div class="card">
+            <video autoplay muted loop> <source src="./static/redet5.mp4" type="video/mp4" /> </video>
+            <div class="content">
+                <div class="titles">
+                    <div class="title">Android rotation realtime visualization</div>
+                    <div class="subtitle">Rotation info broadcasted via MQTT to node.js and sent to frontend via socket.io where it is visualized realtime with THREE.js.</div>
+                </div>
+                <div class="links">
+                    <div class="link"><b>Youtube link:</b> <a href="https://www.youtube.com/watch?v=idLmZH3DmCU">https://www.youtube.com/watch?v=idLmZH3DmCU</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
             <video autoplay muted loop> <source src="./static/tpl.mp4" type="video/mp4" /> </video>
             <div class="content">
                 <div class="titles">
@@ -141,7 +155,6 @@ h3 {
                 </div>
             </div>
         </div>
-
         <div class="card">
             <img src="./static/lx.jpg" alt="">
             <div class="content">
