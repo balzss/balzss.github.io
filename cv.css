@@ -75,20 +75,19 @@ h1, h2, h3 {
     height: auto;
 }
 
-.block {
-    width: 35%;
-    height: 68px;
-    background-color: #201c1d;
-}
-
 .about, .contact {
     padding: 24px;
 }
 
 .place {
     display: flex;
-    border-bottom: 1px solid #201c1d;
-    padding-bottom: 32px;
+    padding-bottom: 24px;
+}
+
+.section-starter {
+    border-top: 1px solid #201c1d;
+    margin: 0;
+    padding: 24px 0;
 }
 
 .date {
