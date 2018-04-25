@@ -130,7 +130,7 @@ h3 {
                     <div class="subtitle">Featherweight, Responsive, CSS Only Navigation Bar</div>
                 </div>
                 <div class="links">
-                    <div class="link"><b>Github:</b> <a href="https://github.com/balzss/luxbar">https://github.com/balzss/luxbar</a></div>
+                    <div class="link"><b>Github (<span class=gh-stars></span> stars):</b> <a class="gh-link" href="https://github.com/balzss/luxbar">https://github.com/balzss/luxbar</a></div>
                     <div class="link"><b>Website:</b> <a href="https://balzss.github.io/luxbar">https://balzss.github.io/luxbar</a></div>
                 </div>
             </div>
@@ -144,7 +144,7 @@ h3 {
                     <div class="subtitle">An interactive commandline application (written in node.js) to practice touch typing with a countdown clock, customizable exercises and stats that can be saved.</div>
                 </div>
                 <div class="links">
-                    <div class="link"><b>Github:</b> <a href="https://github.com/balzss/cli-typer">https://github.com/balzss/cli-typer</a></div>
+                    <div class="link"><b>Github: (<span class=gh-stars></span> stars):</b> <a class="gh-link" href="https://github.com/balzss/cli-typer">https://github.com/balzss/cli-typer</a></div>
                 </div>
             </div>
         </div>
@@ -183,7 +183,7 @@ h3 {
                     <div class="subtitle">Visual syntax optimized for displaying source code on handheld devices</div>
                 </div>
                 <div class="links">
-                    <div class="link"><b>Github:</b> <a href="https://github.com/balzss/touchPL">https://github.com/balzss/touchPL</a></div>
+                    <div class="link"><b>Github: (<span class=gh-stars></span> stars):</b> <a class="gh-link" href="https://github.com/balzss/touchPL">https://github.com/balzss/touchPL</a></div>
                     <div class="link"><b>Website:</b> <a href="https://balzss.github.io/touchPL">https://balzss.github.io/touchPL</a></div>
                 </div>
             </div>
@@ -196,7 +196,7 @@ h3 {
                     <div class="subtitle">A python script that creates a compilation video with music from gifs from a given subreddit.</div>
                 </div>
                 <div class="links">
-                    <div class="link"><b>Github:</b> <a href="https://github.com/balzss/compilation-bot">https://github.com/balzss/compilation-bot</a></div>
+                    <div class="link"><b>Github: (<span class=gh-stars></span> stars):</b> <a class="gh-link" href="https://github.com/balzss/compilation-bot">https://github.com/balzss/compilation-bot</a></div>
                     <div class="link"><b>Youtube demo:</b> <a href="https://www.youtube.com/watch?v=mT8efxzTsSc">https://www.youtube.com/watch?v=mT8efxzTsSc</a></div>
                 </div>
             </div>
@@ -209,8 +209,8 @@ h3 {
                     <div class="subtitle">Customizable and easy to use IOS, Android and OSX device frames in one line of HTML</div>
                 </div>
                 <div class="links">
-                    <div class="link"><b>Github:</b> <a href="https://github.com/balzss/touchPL">https://github.com/balzss/touchPL</a></div>
-                    <div class="link"><b>Website:</b> <a href="https://balzss.github.io/touchPL">https://balzss.github.io/touchPL</a></div>
+                    <div class="link"><b>Github: (<span class=gh-stars></span> stars):</b> <a class="gh-link" href="https://github.com/balzss/lx-devices">https://github.com/balzss/lx-devices</a></div>
+                    <div class="link"><b>Website:</b> <a href="https://balzss.github.io/lx-devices">https://balzss.github.io/lx-devices</a></div>
                 </div>
             </div>
         </div>
@@ -222,7 +222,7 @@ h3 {
                     <div class="subtitle">Frontend for searching PyPI, a feature rich alternative to pip search</div>
                 </div>
                 <div class="links">
-                    <div class="link"><b>Github:</b> <a href="https://github.com/balzss/yip">https://github.com/balzss/yip</a></div>
+                    <div class="link"><b>Github: (<span class=gh-stars></span> stars):</b> <a class="gh-link" href="https://github.com/balzss/yip">https://github.com/balzss/yip</a></div>
                 </div>
             </div>
         </div>
@@ -233,8 +233,8 @@ h3 {
                     <div class="title">Published articles</div>
                     <ul>
                         <li><a href="https://hackernoon.com/beyond-esolangs-6-things-that-are-unintentionally-turing-complete-60ab1e1b50f9">Beyond Esolangs: 6 Things That Are Unintentionally Turing-Complete</a></li>
-                        <li><a href="https://hackernoon.com/how-an-interactive-documentation-helped-me-get-450-stars-on-my-github-repo-f14816b95fdd">How an interactive documentation helped me get 450+ stars on my Github repo</a></li>
-                        <li><a href="https://hackernoon.com/how-an-interactive-documentation-helped-me-get-450-stars-on-my-github-repo-f14816b95fdd">How I accidentally deleted all my Python modules and got it back in 20 minutes</a></li>
+                        <li><a href="https://hackernoon.com/how-an-interactive-documentation-helped-me-get-450-stars-on-my-github-repo-f14816b95fdd">How an interactive documentation helped me get 450+ stars on my Github repo</a></li>
+                        <li><a href="https://hackernoon.com/how-an-interactive-documentation-helped-me-get-450-stars-on-my-github-repo-f14816b95fdd">How I accidentally deleted all my Python modules and got it back in 20 minutes</a></li>
                         <li><a href="https://hackernoon.com/improving-and-extending-the-search-functionality-of-pythons-pip-50d01a4a344f">Improving and extending the search functionality of Python’s pip</a></li>
                     </ul>
                 </div>
@@ -257,5 +257,19 @@ h3 {
         </div>
 
     </div>
+
+    <script charset="utf-8">
+        const ghLinks = document.querySelectorAll('.gh-link');
+        for(l of ghLinks){
+            const repoName = l.href.split('/').slice(-1)[0];
+            let prevElem = l.previousElementSibling.querySelector('.gh-stars');
+            fetch('https://api.github.com/repos/balzss/' + repoName + '?access_token=e2041df41a935abc78e79ad1e3f1c914f56c8924')
+                .then(response => {
+                    return response.json();
+                }).then(response => {
+                    prevElem.innerHTML = response.stargazers_count;
+                });
+        }
+    </script>
 </body>
 </html>
